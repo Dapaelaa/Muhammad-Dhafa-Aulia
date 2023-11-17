@@ -43,7 +43,7 @@
     <h1> Profile pribadi </h1>
     <h3> Data diri  </h3>
 
-    <div class="card text-center" style="width: 50%;">
+    <div class="card" style="width: 50%;">
       <img src="..." class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>

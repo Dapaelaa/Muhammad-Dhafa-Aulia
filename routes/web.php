@@ -68,3 +68,24 @@ Route::get('perulangan', function () {
 //    }
     
 });
+
+
+
+Route::get('utshome', function () {
+    return view('utshome');
+});
+
+route::get('utsproduk', function () {
+    $kode = ['BRG001', 'BRG002'];
+    $nama = ['pena', 'buku'];
+    $jenis = ['Alat Tulis', 'Alat Tulis'];
+    $harga = [2000, 1500];
+    $total = count($kode);
+    return view('utsproduk', compact('kode', 'nama', 'jenis', 'harga', 'total'));
+});
+route::get('utstambahproduk', function () {
+    $namaproduk = ['Pilih Produk', 'Alat Tulis', 'elektronik', 'Sembako'];
+    $jumlah = count($namaproduk);
+
+    return view('utstambahproduk', compact('namaproduk', 'jumlah'));
+});
