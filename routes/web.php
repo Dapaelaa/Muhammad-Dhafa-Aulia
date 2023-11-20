@@ -61,6 +61,7 @@ Route::get('perulangan', function () {
     for ($i= 6; $i < 11; $i++) { 
         echo "mobile ke - " . $i . ' kurang baik'.'<br>';
     }
+
     //echo '<hr>';
     //if ($mobil_bagus <= $mobil_rusak) {
     //    echo "mobil ke - " . $mobil_bagus . 'beroperasi dengan baik'.'<br';
@@ -88,4 +89,8 @@ route::get('utstambahproduk', function () {
     $jumlah = count($namaproduk);
 
     return view('utstambahproduk', compact('namaproduk', 'jumlah'));
+});
+
+Route::get('tugas1', function () {
+    return view('tugas1');
 });
